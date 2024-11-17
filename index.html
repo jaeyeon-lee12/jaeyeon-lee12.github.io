@@ -150,6 +150,36 @@
             color: #3498db !important;
             margin-left: 0.5rem;
         }
+        
+            /* Style specifically for coauthor links */
+    .coauthor-link {
+        color: #34495e;  /* darker blue-grey */
+        text-decoration: none;
+        border-bottom: 1px dashed #34495e;
+        transition: all 0.3s ease;
+        padding-bottom: 1px;
+    }
+
+    .coauthor-link:hover {
+        color: #3498db;  /* lighter blue */
+        border-bottom: 1px solid #3498db;
+    }
+
+    /* Style for paper links (like SSRN) */
+    .paper-link {
+        color: #3498db;
+        text-decoration: none;
+        font-size: 0.9em;
+        margin-left: 0.5rem;
+        font-weight: 500;
+    }
+
+    .paper-link:hover {
+        color: #2980b9;
+    }
+
+
+
     </style>
 </head>
 <body>
@@ -193,23 +223,23 @@
             <div class="research-item">
                 <h3>Working Papers</h3>
                 <p>"Confederate Memorials and the Housing Market" with 
-                    <a href="https://sites.google.com/view/tcliftongreen" target="_blank">Clifton Green</a>, 
-                    <a href="https://russelljame.com" target="_blank">Russell Jame</a>, 
-                    <a href="https://myweb.cuhk.edu.cn/leejaemin" target="_blank">Jaemin Lee</a>
+                    <a href="https://sites.google.com/view/tcliftongreen" target="_blank" class="coauthor-link">Clifton Green</a>, 
+                    <a href="https://russelljame.com" target="_blank" class="coauthor-link">Russell Jame</a>, 
+                    <a href="https://myweb.cuhk.edu.cn/leejaemin" target="_blank" class="coauthor-link">Jaemin Lee</a>
                     <br>
-                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4022721" target="_blank" style="color: #3498db; text-decoration: none; font-size: 0.9em;">[SSRN]</a>
+                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4022721" target="_blank" class="paper-link">[SSRN]</a>
                 </p>
             </div>
-
+            
             <div class="research-item">
                 <h3>Work in Progress</h3>
                 <p>"Housing Supply Elasticities Across Time and Space and Media Sentiment" with 
-                    <a href="https://sites.google.com/site/goreadenis/" target="_blank">Denis Gorea</a>, 
-                    <a href="https://www.bis.org/author/boris_hofmann.htm" target="_blank">Boris Hofmann</a>, 
-                    <a href="https://www.bis.org/author/deniz_igan.htm" target="_blank">Deniz Igan</a>
+                    <a href="https://sites.google.com/site/goreadenis/" target="_blank" class="coauthor-link">Denis Gorea</a>, 
+                    <a href="https://www.bis.org/author/boris_hofmann.htm" target="_blank" class="coauthor-link">Boris Hofmann</a>, 
+                    <a href="https://www.bis.org/author/deniz_igan.htm" target="_blank" class="coauthor-link">Deniz Igan</a>
                 </p>
                 <p style="margin-top: 1rem;">"Spatially Targeted Leverage Regulation and Rental Housing" with 
-                    <a href="https://konhee.github.io" target="_blank">Konhee Chang</a>
+                    <a href="https://konhee.github.io" target="_blank" class="coauthor-link">Konhee Chang</a>
                 </p>
             </div>
         </div>
