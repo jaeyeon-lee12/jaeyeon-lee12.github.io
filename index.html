@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Portfolio</title>
+    <title>Jaeyeon Lee - Job Market</title>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -106,13 +106,25 @@
         .cv-section {
             background: white;
             padding: 2rem;
+            margin: 2rem 0;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
-        .cv-section h3 {
-            color: var(--secondary-color);
-            margin: 1.5rem 0 1rem 0;
+        .download-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .download-btn:hover {
+            background-color: #2980b9;
         }
 
         @media (max-width: 768px) {
@@ -136,12 +148,14 @@
     <section id="home">
         <div class="container profile-container">
             <img src="/api/placeholder/200/200" alt="Profile Picture" class="profile-image">
-            <h1 class="section-title">Your Name</h1>
+            <h1 class="section-title">Jaeyeon Lee</h1>
             <p>
-                Welcome! I am a PhD candidate at Haas School of Business, UC Berkeley. 
-                
-                In my job market paper, I study monetary policy pass-through channel in the multifamily housing rental market.
-                
+                Welcome! I am a PhD candidate at Haas School of Business, UC Berkeley.
+            </p>
+            <p style="margin-top: 1rem;">
+                In my job market paper, I study the asymmetric pass-through of interest rates to rental prices in the multifamily housing rental market.
+            </p>
+            <p style="margin-top: 1rem;">
                 I am on the 2024-25 job market.
             </p>
         </div>
@@ -152,13 +166,20 @@
             <h2 class="section-title">Research</h2>
             
             <div class="research-item">
-                <h3>Research Project 1</h3>
-                <p>Description of your first research project. Include key findings, methodologies, and any publications.</p>
+                <h3>Job Market Paper</h3>
+                <h4>Asymmetric Pass-Through of Interest Rates to Rental Prices: Evidence from Rental Listings for Multi-Unit Housing</h4>
+                <p>I use property-level data merged with loan-level data to document three empirical facts about the relationship between interest rates and rental prices for properties financed through government-sponsored entity (GSE) commercial mortgage-backed securities (CMBS) loans. First, rental prices rise when interest rates increase. Second, rental prices do not decline when interest rates fall. Third, this asymmetric pass-through of interest rates primarily occurs among properties that are liquidity constrained due to debt-service coverage ratios (DSCR). These empirical facts cannot be rationalized with standard neoclassical models that assume pricing decisions are unaffected by fixed costs like mortgage payments. I propose an alternative model that rationalizes the pass-through of interest rates by incorporating liquidity constraints imposed by DSCR, which can create asymmetric responses to changes in interest rates.</p>
             </div>
 
             <div class="research-item">
-                <h3>Research Project 2</h3>
-                <p>Description of your second research project. Include key findings, methodologies, and any publications.</p>
+                <h3>Working Papers</h3>
+                <p>"Confederate Memorials and the Housing Market" with Clifton Green, Russell Jame, Jaemin Lee</p>
+            </div>
+
+            <div class="research-item">
+                <h3>Work in Progress</h3>
+                <p>"Housing Supply Elasticities Across Time and Space and Media Sentiment" with Denis Gorea, Boris Hoffman, Deniz Igan</p>
+                <p style="margin-top: 1rem;">"Spatially Targeted Leverage Regulation and Rental Housing" with Konhee Chang</p>
             </div>
         </div>
     </section>
@@ -168,29 +189,7 @@
             <h2 class="section-title">Curriculum Vitae</h2>
             
             <div class="cv-section">
-                <h3>Education</h3>
-                <ul>
-                    <li>Degree, Institution, Year</li>
-                    <li>Degree, Institution, Year</li>
-                </ul>
-
-                <h3>Publications</h3>
-                <ul>
-                    <li>Publication 1</li>
-                    <li>Publication 2</li>
-                </ul>
-
-                <h3>Awards and Honors</h3>
-                <ul>
-                    <li>Award 1</li>
-                    <li>Award 2</li>
-                </ul>
-
-                <h3>Teaching Experience</h3>
-                <ul>
-                    <li>Course, Institution, Year</li>
-                    <li>Course, Institution, Year</li>
-                </ul>
+                <a href="main_jaeyeonlee.pdf" class="download-btn" download>Download CV</a>
             </div>
         </div>
     </section>
