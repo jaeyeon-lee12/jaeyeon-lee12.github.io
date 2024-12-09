@@ -203,18 +203,27 @@
         }
 
         .profile-image {
-            width: 240px;  /* Made slightly larger for better presence */
-            height: 240px;
-            border-radius: 8px;  /* Slight rounding of corners instead of circular */
-            object-fit: cover;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
+        width: 480px;  /* Base width */
+        height: 251px; /* Height calculated for 1.91:1 ratio (480/1.91) */
+        border-radius: 8px;
+        object-fit: cover;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
 
-        .profile-image:hover {
-            transform: scale(1.03);  /* Slightly reduced scale effect for professional look */
+    .profile-image:hover {
+        transform: scale(1.03);
+    }
+
+    /* Add responsive handling for the profile image */
+    @media (max-width: 768px) {
+        .profile-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1.91/1;
         }
+    }
     </style>
 </head>
 <body>
