@@ -204,9 +204,10 @@
 
         .profile-image {
         width: 480px;  /* Base width */
-        height: 251px; /* Height calculated for 1.91:1 ratio (480/1.91) */
+        height: 251px; /* Height for 1.91:1 ratio */
         border-radius: 8px;
         object-fit: cover;
+        object-position: 30% center; /* Shift the focal point left by 30% */
         margin-bottom: 2rem;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         transition: transform 0.3s ease;
